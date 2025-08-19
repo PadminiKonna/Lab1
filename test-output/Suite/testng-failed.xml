@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Lab4 on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="pack1.Lab9_4_Testng">
+        <methods>
+          <include name="afterClass"/>
+          <include name="desktopMac"/>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- pack1.Lab9_4_Testng -->
+    </classes>
+  </test> <!-- Lab4 on Chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Lab3 on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="pack1.Lab9_3_Testng">
+        <methods>
+          <include name="Cart"/>
+          <include name="afterClass"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- pack1.Lab9_3_Testng -->
+    </classes>
+  </test> <!-- Lab3 on Chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Lab3 on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="pack1.Lab9_3_Testng">
+        <methods>
+          <include name="Cart"/>
+          <include name="afterClass"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- pack1.Lab9_3_Testng -->
+    </classes>
+  </test> <!-- Lab3 on Firefox(failed) -->
+  <test thread-count="5" parallel="tests" name="Lab4 on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="pack1.Lab9_4_Testng">
+        <methods>
+          <include name="afterClass"/>
+          <include name="desktopMac"/>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- pack1.Lab9_4_Testng -->
+    </classes>
+  </test> <!-- Lab4 on Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
