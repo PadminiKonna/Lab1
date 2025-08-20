@@ -15,44 +15,32 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class Lab8_1 {
+public class lab11_2_4_testng_pagefactory {
 	WebDriver driver;
   @Test(dataProvider = "dp")
   public void f(String searchItem) throws InterruptedException {
 	  
-	  
-	  driver.findElement(By.linkText("Desktops")).click();
-      driver.findElement(By.linkText("Mac (1)")).click();
-      
-      WebElement sort = driver.findElement(By.id("input-sort"));
-      sort.click();
-      sort.findElement(By.xpath("//option[contains(text(),'Name (A - Z)')]")).click();
+	  lab11_2_3_pagefactory pf1=PageFactory.initElements(driver, lab11_2_3_pagefactory.class);
 
-     
-      driver.findElement(By.xpath("//button[contains(@onclick,'cart.add')]")).click();
+      pf1.clickDesktops();
+      pf1.clickMac();
+      pf1.selectSortAZ();
+      pf1.clickAddToCart();
+
       Thread.sleep(3000);
 
-      
-      WebElement searchBox = driver.findElement(By.name("search"));
-      searchBox.clear();
-      searchBox.sendKeys(searchItem);
-      driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-
-     
-      WebElement criteria = driver.findElement(By.name("search"));
-      criteria.clear();
-      criteria.sendKeys(searchItem);
-      driver.findElement(By.name("description")).click();
-      driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
+      pf1.searchItem(searchItem);
+      pf1.searchWithDescription(searchItem);
 
       System.out.println("Search completed for: " + searchItem);
-      
+	
   }
   @BeforeMethod
   public void beforeMethod() {

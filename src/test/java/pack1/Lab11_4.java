@@ -21,38 +21,25 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class Lab8_1 {
+public class Lab11_4 {
 	WebDriver driver;
   @Test(dataProvider = "dp")
   public void f(String searchItem) throws InterruptedException {
 	  
-	  
-	  driver.findElement(By.linkText("Desktops")).click();
-      driver.findElement(By.linkText("Mac (1)")).click();
-      
-      WebElement sort = driver.findElement(By.id("input-sort"));
-      sort.click();
-      sort.findElement(By.xpath("//option[contains(text(),'Name (A - Z)')]")).click();
+	  lab3_4_Pageobject l2 = new lab3_4_Pageobject(driver);
 
-     
-      driver.findElement(By.xpath("//button[contains(@onclick,'cart.add')]")).click();
+      l2.clickDesktops();
+      l2.clickMac();
+      l2.selectSortAZ();
+      l2.clickAddToCart();
+
       Thread.sleep(3000);
 
-      
-      WebElement searchBox = driver.findElement(By.name("search"));
-      searchBox.clear();
-      searchBox.sendKeys(searchItem);
-      driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-
-     
-      WebElement criteria = driver.findElement(By.name("search"));
-      criteria.clear();
-      criteria.sendKeys(searchItem);
-      driver.findElement(By.name("description")).click();
-      driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
+      l2.searchItem(searchItem);
+      l2.searchWithDescription(searchItem);
 
       System.out.println("Search completed for: " + searchItem);
-      
+	
   }
   @BeforeMethod
   public void beforeMethod() {

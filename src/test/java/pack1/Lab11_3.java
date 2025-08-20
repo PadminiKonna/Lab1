@@ -15,48 +15,37 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class Lab8_1 {
-	WebDriver driver;
+public class Lab11_3 {
+	 WebDriver driver;
   @Test(dataProvider = "dp")
-  public void f(String searchItem) throws InterruptedException {
-	  
-	  
-	  driver.findElement(By.linkText("Desktops")).click();
-      driver.findElement(By.linkText("Mac (1)")).click();
-      
-      WebElement sort = driver.findElement(By.id("input-sort"));
-      sort.click();
-      sort.findElement(By.xpath("//option[contains(text(),'Name (A - Z)')]")).click();
+  public void f(String a,String b) throws InterruptedException {
+	 /* WebDriverManager.chromedriver().setup();
+		//WebDriver driver;
+		String title=driver.getTitle();
+		System.out.println("The Title is:"+title);*/
+	  lab3_4_Pageobject l1 = new lab3_4_Pageobject(driver);
 
+      l1.clickDesktops();
+      l1.clickMac();
+      l1.selectSortAZ();
+      l1.clickAddToCart();
+
+      Thread.sleep(2000);
+      System.out.println("Test executed with data: " + a + ", " + b);
+	
      
-      driver.findElement(By.xpath("//button[contains(@onclick,'cart.add')]")).click();
-      Thread.sleep(3000);
-
-      
-      WebElement searchBox = driver.findElement(By.name("search"));
-      searchBox.clear();
-      searchBox.sendKeys(searchItem);
-      driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-
-     
-      WebElement criteria = driver.findElement(By.name("search"));
-      criteria.clear();
-      criteria.sendKeys(searchItem);
-      driver.findElement(By.name("description")).click();
-      driver.findElement(By.cssSelector("button.btn.btn-default.btn-lg")).click();
-
-      System.out.println("Search completed for: " + searchItem);
-      
-  }
+   
+	}
+  
   @BeforeMethod
   public void beforeMethod() {
-	  
 	  WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -67,16 +56,16 @@ public class Lab8_1 {
 
   @AfterMethod
   public void afterMethod() {
-	  driver.quit();
-	  
+	 // driver.quit();
+		
   }
 
 
   @DataProvider
   public Object[][] dp() {
     return new Object[][] {
-    	new Object[] { "Mobile" },
-        new Object[] { "Monitors" }
+    	new Object[] { "1","a" },
+        new Object[] { "2","b" }
     };
   }
   @BeforeClass
@@ -110,3 +99,4 @@ public class Lab8_1 {
   }
 
 }
+
