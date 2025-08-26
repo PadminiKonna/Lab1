@@ -1,4 +1,4 @@
-package pack1;
+/*package pack1;
 
 
 
@@ -87,4 +87,4 @@ public class Lab13_1 {
 
         driver.quit();
     }
-}
+}*/

@@ -3,19 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pack1.Lab16_1">
+      <class name="pack1.jenkinstest">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="beforeClass"/>
-          <include name="registerUser" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- pack1.Lab16_1 -->
+      </class> <!-- pack1.jenkinstest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
