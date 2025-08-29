@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pack1.jenkinstest">
+      <class name="Questions.Q3">
         <methods>
+          <include name="beforeClass"/>
           <include name="f"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- pack1.jenkinstest -->
+      </class> <!-- Questions.Q3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

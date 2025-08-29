@@ -1,0 +1,107 @@
+Started by user Konna Padmini
+Running as SYSTEM
+Building in workspace C:\Users\LENOVO\.jenkins\workspace\aug28_2025
+[aug28_2025] $ cmd /c call C:\Users\LENOVO\AppData\Local\Temp\jenkins7408490179273833146.bat
+
+C:\Users\LENOVO\.jenkins\workspace\aug28_2025>echo hello 
+hello
+
+C:\Users\LENOVO\.jenkins\workspace\aug28_2025>cd C:\Users\LENOVO\eclipse-workspace\Aug-07 
+
+C:\Users\LENOVO\eclipse-workspace\Aug-07>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< Aug-07:Aug-07 >----------------------------
+[INFO] Building Aug-07 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ Aug-07 ---
+[INFO] Deleting C:\Users\LENOVO\eclipse-workspace\Aug-07\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Aug-07 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Aug-07 ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 7 source files with javac [debug target 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Aug-07 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Aug-07 ---
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 56 source files with javac [debug target 17] to target\test-classes
+[ERROR] /C:/Users/LENOVO/eclipse-workspace/Aug-07/src/test/java/pack1/Lab13_1.java:[56,46] unmappable character (0x9D) for encoding windows-1252
+[INFO] /C:/Users/LENOVO/eclipse-workspace/Aug-07/src/test/java/com/orangehrm/stepdefinitions/TestRunner.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/LENOVO/eclipse-workspace/Aug-07/src/test/java/com/orangehrm/stepdefinitions/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ Aug-07 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Aug 28, 2025 5:08:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 28, 2025 5:08:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Login successful:You logged into a secure area!
+×
+Aug 28, 2025 5:08:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Top 2 Laptops:
+1. Bestseller HP Laptops with Intel Core i5 13th gen
+2. Brands related to your search
+Aug 28, 2025 5:08:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Selected option: Two
+Aug 28, 2025 5:08:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Result: You successfully clicked an alert
+after class
+Aug 28, 2025 5:08:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+the Title of the page:Google
+Aug 28, 2025 5:08:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Both checkboxes are selected âœ…
+after class
+Aug 28, 2025 5:09:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Names from Table 1:
+John Smith
+Frank Bach
+Jason Doe
+Tim Conway
+Email of Jason: jdoe@hotmail.com
+Aug 28, 2025 5:09:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Child Window Title: New Window
+Parent Window Title: The Internet
+tear down
+Aug 28, 2025 5:09:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Screenshot saved as: C:\Users\LENOVO\eclipse-workspace\Aug-07\homepage.png
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.64 s -- in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:18 min
+[INFO] Finished at: 2025-08-28T17:09:13+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

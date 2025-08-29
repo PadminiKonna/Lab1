@@ -1,17 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="10" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-26T17:13:44 IST" name="Suite" finished-at="2025-08-26T17:13:52 IST" duration-ms="7945">
+  <suite started-at="2025-08-28T16:59:50 IST" name="Default suite" finished-at="2025-08-28T17:01:31 IST" duration-ms="101120">
     <groups>
     </groups>
-    <test started-at="2025-08-26T17:13:44 IST" name="Test" finished-at="2025-08-26T17:13:52 IST" duration-ms="7945">
-      <class name="pack1.jenkinstest">
-        <test-method signature="f()[pri:0, instance:pack1.jenkinstest@5bda8e08]" started-at="2025-08-26T17:13:44 IST" name="f" finished-at="2025-08-26T17:13:52 IST" duration-ms="7902" status="PASS">
+    <test started-at="2025-08-28T16:59:50 IST" name="Default test" finished-at="2025-08-28T17:01:31 IST" duration-ms="101120">
+      <class name="com.orangehrm.tests.LoginOrangeHRM">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T16:59:50 IST" name="setupReport" finished-at="2025-08-28T16:59:50 IST" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- pack1.jenkinstest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T16:59:50 IST" name="setup" finished-at="2025-08-28T16:59:57 IST" duration-ms="7150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="questio2()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T16:59:57 IST" name="questio2" finished-at="2025-08-28T17:00:04 IST" duration-ms="6493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- questio2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:04 IST" name="teardown" finished-at="2025-08-28T17:00:04 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:04 IST" name="setup" finished-at="2025-08-28T17:00:10 IST" duration-ms="6024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question1_google()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:10 IST" name="question1_google" finished-at="2025-08-28T17:00:11 IST" duration-ms="1067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question1_google -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:11 IST" name="teardown" finished-at="2025-08-28T17:00:12 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:12 IST" name="setup" finished-at="2025-08-28T17:00:19 IST" duration-ms="7412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question3_amazonLaptopSearch()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:19 IST" name="question3_amazonLaptopSearch" finished-at="2025-08-28T17:00:28 IST" duration-ms="9180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question3_amazonLaptopSearch -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:28 IST" name="teardown" finished-at="2025-08-28T17:00:29 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:29 IST" name="setup" finished-at="2025-08-28T17:00:33 IST" duration-ms="4629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question4_dropdownSelection()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:33 IST" name="question4_dropdownSelection" finished-at="2025-08-28T17:00:35 IST" duration-ms="1501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question4_dropdownSelection -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:35 IST" name="teardown" finished-at="2025-08-28T17:00:35 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:35 IST" name="setup" finished-at="2025-08-28T17:00:42 IST" duration-ms="7298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question5_handleAlertPopup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:42 IST" name="question5_handleAlertPopup" finished-at="2025-08-28T17:00:50 IST" duration-ms="7656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question5_handleAlertPopup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:50 IST" name="teardown" finished-at="2025-08-28T17:00:50 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:50 IST" name="setup" finished-at="2025-08-28T17:00:58 IST" duration-ms="7259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question6_handleCheckbox()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:00:58 IST" name="question6_handleCheckbox" finished-at="2025-08-28T17:01:04 IST" duration-ms="6006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question6_handleCheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:04 IST" name="teardown" finished-at="2025-08-28T17:01:04 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:04 IST" name="setup" finished-at="2025-08-28T17:01:06 IST" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question7_webTableData()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:06 IST" name="question7_webTableData" finished-at="2025-08-28T17:01:12 IST" duration-ms="5372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question7_webTableData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:12 IST" name="teardown" finished-at="2025-08-28T17:01:12 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:12 IST" name="setup" finished-at="2025-08-28T17:01:17 IST" duration-ms="4828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question8_multipleWindows()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:17 IST" name="question8_multipleWindows" finished-at="2025-08-28T17:01:23 IST" duration-ms="6635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question8_multipleWindows -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:23 IST" name="teardown" finished-at="2025-08-28T17:01:24 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:24 IST" name="setup" finished-at="2025-08-28T17:01:27 IST" duration-ms="3275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="question9_screenshotCapture()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:27 IST" name="question9_screenshotCapture" finished-at="2025-08-28T17:01:31 IST" duration-ms="3646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- question9_screenshotCapture -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:31 IST" name="teardown" finished-at="2025-08-28T17:01:31 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.orangehrm.tests.LoginOrangeHRM@75db5df9]" started-at="2025-08-28T17:01:31 IST" name="flushReport" finished-at="2025-08-28T17:01:33 IST" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.orangehrm.tests.LoginOrangeHRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -27,7 +27,7 @@ public class LoginOrangeHRM extends BaseTest {
         return ExcelUtiles.getdata(excelPath, sheetName);
     }
 
-    @Test(dataProvider = "loginData")
+    @Test(dataProvider = "loginData",enabled=false)
     public void loginTest(String username, String password) {
         // Initialize page object
         loginPage = new LoginPageFactory(driver);

@@ -37,8 +37,8 @@ public class Q3 {
         List<WebElement> products = driver.findElements( By.xpath("//span[contains(@class,'a-size-medium')]"));
 
         
-        System.out.println("Top 5 Laptops:");
-        for (int i = 0; i < 5 && i < products.size(); i++) {
+        System.out.println("Top 2 Laptops:");
+        for (int i = 0; i < 2 && i < products.size(); i++) {
             System.out.println((i + 1) + ". " + products.get(i).getText());
         }
     }

@@ -98,6 +98,8 @@
             <configuration>
                 <suiteXmlFiles>
                     <suiteXmlFile>testng1.xml</suiteXmlFile>
+                    <suiteXmlFile>testng2.xml</suiteXmlFile>
+                    
                 </suiteXmlFiles>
             </configuration>
         </plugin>
